@@ -1,2 +1,2 @@
-bot: python3 futbot.py
+worker: python futbot.py
 
