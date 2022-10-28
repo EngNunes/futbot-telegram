@@ -1,2 +1,2 @@
-bot: python futbot.py
+bot: python3 futbot.py
 
