@@ -1,2 +1,2 @@
-bot: python3 src/futbot.py
+web: python3 src/futbot.py
 

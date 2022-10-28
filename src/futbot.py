@@ -16,7 +16,7 @@ load_dotenv()
 my_secret = os.environ['TOKEN']
 print('iniciando FutBot')
 
-PORT = int(os.environ.get('PORT','8443'))
+PORT = int(os.environ.get('PORT','5000'))
 TOKEN = my_secret
 
 def main():
