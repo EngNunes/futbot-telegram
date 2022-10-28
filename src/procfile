@@ -1,3 +1,2 @@
-buildpacks:set heroku/python
-worker: python3 futbot.py
+worker: python3 teste.py
 
