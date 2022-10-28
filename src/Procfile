@@ -1,2 +1,2 @@
-worker: python teste.py
+worker: python src/futbot.py
 
