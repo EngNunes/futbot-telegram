@@ -16,7 +16,7 @@ load_dotenv()
 my_secret = os.environ['TOKEN']
 print('iniciando FutBot')
 
-PORT = int(os.environ.get('PORT','8443'))
+PORT = int(os.environ.get('PORT',5000))
 
 def main():
   updater = Updater(os.environ['TOKEN'])
@@ -62,7 +62,10 @@ def main():
   print('FutBot ativado')
   # updater.start_polling()
   print("webhook:",'https://futbot.herokuapp.com/' + TOKEN)
-  updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN, webhook_url='https://futbot.herokuapp.com/' + TOKEN)
+  print(PORT)
+  updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
+  # updater.start_webhook(listen="192.168.1.4", port=int(PORT), url_path=TOKEN, webhook_url='http://192.168.1.4' + TOKEN)
+  updater.bot.setWebhook('https://futbot.herokuapp.com/' + TOKEN)
   
 
   updater.idle()
