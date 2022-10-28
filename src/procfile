@@ -1,2 +1,3 @@
+buildpacks:set heroku/python
 worker: python3 futbot.py
 
