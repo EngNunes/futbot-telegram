@@ -60,12 +60,12 @@ def main():
   dispatcher.add_error_handler(error)
 
   print('FutBot ativado')
-  # updater.start_polling()
-  print("webhook:",'https://futbot.herokuapp.com/' + TOKEN)
-  print(PORT)
-  updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
-  # updater.start_webhook(listen="192.168.1.4", port=int(PORT), url_path=TOKEN, webhook_url='http://192.168.1.4' + TOKEN)
-  updater.bot.setWebhook('https://futbot.herokuapp.com/' + TOKEN)
+  updater.start_polling()
+  
+  # updater.start_webhook(listen="0.0.0.0", port=int(PORT), url_path=TOKEN)
+  # updater.start_webhook(listen="192.168.1.4", port=int(PORT), url_path=TOKEN)
+  # updater.bot.setWebhook('https://futbot.herokuapp.com/' + TOKEN)
+  # updater.bot.setWebhook('https://futbot.herokuapp.com/' + TOKEN)
   
 
   updater.idle()
