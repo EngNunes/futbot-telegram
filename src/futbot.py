@@ -6,6 +6,7 @@ from commands.matches_command import matches_command, buttonMatches
 from commands.champions_command import champions_command
 from commands.groups_command import groups_command
 from commands.help_command import help_command
+from page import keep_alive
 
 from handlers.handler_message import handle_message
 
@@ -65,4 +66,4 @@ def main():
 
 if __name__ == '__main__':
   main()
-
+  keep_alive()
