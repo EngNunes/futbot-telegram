@@ -7,6 +7,8 @@ https://python-telegram-bot.org/
 #run commands in terminal:
 to create env python[version] -m venv env
 example: python3.7 -m venv env
+
+
 python3.7 -m venv env
 
 to activate virtual enviroment
